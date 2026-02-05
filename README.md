@@ -39,24 +39,43 @@ The bot supports two modes:
 ##  Project Structure
 
 binance_bot/
+
 │
+
 ├── src/
-│   ├── cli.py                 # Main CLI entry point
+
+│   ├── cli.py             # Main CLI entry point
+
 │
+
 │   ├── api/
+
 │   │   └── client.py          # Binance Futures client + Mock client
+
 │
+
 │   ├── orders/
+
 │   │   ├── market.py          # Market order logic
+
 │   │   ├── limit.py           # Limit order logic
+
 │   │   └── stop_limit.py      # Stop-Limit order logic (bonus)
+
 │
+
 │   ├── utils/
+
 │       ├── logger.py          # Logging configuration
+
 │       └── validators.py      # Input validation helpers
+
 │
+
 ├── bot.log                    # Request/response/error logs
+
 ├── requirements.txt           # Dependencies
+
 └── README.md
 
 
